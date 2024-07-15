@@ -16,12 +16,21 @@
   <body>
     <div class="search-container">
       <form class="search-form" id="task-form">
-        <input class="search-input" type="text" name="input" />
+        <input
+          class="search-input"
+          type="text"
+          name="input"
+          placeholder="Search images..."
+        />
         <button class="search-form-btn" type="submit">Search</button>
       </form>
       <div class="list-container">
         <ul class="list"></ul>
       </div>
+      <button class="loader-btn visually-hidden" type="button">
+        Load more
+      </button>
+      <span class="loader visually-hidden"></span>
     </div>
     <script type="module" src="./main.js"></script>
   </body>
